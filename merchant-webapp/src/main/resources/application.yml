@@ -1,0 +1,13 @@
+spring:
+  datasource-local:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:testdb
+  datasource-core:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:testdb
+# Auto Configuration support only from Sprint Boot 1.3.0.Release
+  data:
+    cassandra:
+      keyspacename: timeline
+      contactpoints: 10.32.8.117,10.32.8.118
+      port: 9042

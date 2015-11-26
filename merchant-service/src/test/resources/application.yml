@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:testdb
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    platform: hsqldb
+    continue-on-error: true
+  jpa:
+    hibernate:
+      ddl-auto: none
